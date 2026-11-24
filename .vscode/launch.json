@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [        
+        {
+            "name": "PC Unit Test (WSL)",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": ".",
+            "program": "${workspaceFolder}/modtest",
+            "MIMode": "gdb",
+            "stopAtEntry": true,
+            "miDebuggerPath": "/usr/bin/gdb", // Native Linux GDB
+            "setupCommands": [
+                { "text": "-enable-pretty-printing"},  { "text": "set output-radix 16" }
+            ],
+            /* instruct vscode to step into under those dir*/
+            "sourceFileMap": {
+                "/build/glibc-Cl5G7W/glibc-2.35": "/usr/src/glibc/glibc-2.35"
+            },        
+        }
+    ]
+}
