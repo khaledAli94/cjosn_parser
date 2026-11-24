@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "desc": "Torture Test for Custom JSON Parser",
+    "version": 1.0,
+    "pass": true
+  },
+  "comments_test": {
+    // Single line comment support
+    /* Multi-line 
+       comment support */
+    "enabled": true
+  },
+  "numbers": [
+    0,
+    -15,
+    3.14159,
+    -0.001,
+    1.2e-3
+  ],
+  "strings": {
+    "simple": "Hello World",
+    "escapes": "Line1\nLine2\tTabbed\"Quote\"",
+    "empty": ""
+  },
+  "arrays": [
+    [],
+    [[]],
+    [ 1, 2, [ 3, 4 ], { "nested": "deep" } ]
+  ],
+  "keywords": {
+    "val_true": true,
+    "val_false": false,
+    "val_null": null
+  },
+  "stress": {
+    "deep_object": { "a": { "b": { "c": { "d": "bottom" } } } },
+    "whitespace":     [      1      ,       2       ]
+  },
+  "hardware@0x4000000" :{
+	
+  }
+}
