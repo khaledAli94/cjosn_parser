@@ -5,9 +5,6 @@
     "pass": true
   },
   "comments_test": {
-    // Single line comment support
-    /* Multi-line 
-       comment support */
     "enabled": true
   },
   "numbers": [

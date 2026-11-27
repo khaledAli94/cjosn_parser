@@ -9,7 +9,7 @@
 
 json_start:
     .incbin "benchmark.json"
-    .byte '\0'                 /* null terminator '\0' */
+    //.byte '\0'                 /* null terminator '\0' */
 json_end:
 
 json_size:
